@@ -30,6 +30,10 @@ app.use('/api/boards',boardRouter)
 app.use('/api/columns',columnRouter)
 app.use('/api/cards',cardRouter)
 
-app.listen(PORT,()=>{
-    console.log(`Server running on port ${PORT}`)
-})
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}
+
+export default app

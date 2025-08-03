@@ -88,6 +88,80 @@ The application includes centralized error handling for:
 - MongoDB errors
 - Generic server errors
 
+## Testing
+
+The project uses Jest and Supertest for API testing. Tests cover all major endpoints and functionalities including authentication, board management, and card operations.
+
+### Test Structure
+
+```
+__tests__/
+├── auth.test.ts     # Authentication endpoints tests
+├── board.test.ts    # Board management tests
+├── card.test.ts     # Card operations tests
+├── setup.ts         # Test environment setup
+├── setupEnv.ts      # Environment variables for testing
+└── testUtils.ts     # Shared testing utilities
+```
+
+### Running Tests
+
+Run all tests:
+```bash
+npm test
+```
+
+Run tests in watch mode:
+```bash
+npm run test:watch
+```
+
+Generate test coverage report:
+```bash
+npm run test:coverage
+```
+
+### Test Coverage
+
+Tests cover the following areas:
+- User registration and authentication
+- Board creation and retrieval
+- Column management
+- Card operations
+- Error handling and validation
+- Authorization middleware
+
+### Writing Tests
+
+Example of writing a test:
+```typescript
+describe('Feature', () => {
+  it('should perform specific action', async () => {
+    const response = await request(app)
+      .post('/api/endpoint')
+      .set('Authorization', `Bearer ${token}`)
+      .send(data);
+
+    expect(response.status).toBe(200);
+    expect(response.body).toHaveProperty('expectedProperty');
+  });
+});
+```
+
+### Environment Setup
+
+Tests use:
+- MongoDB Memory Server for database testing
+- JWT for authentication
+- Supertest for HTTP assertions
+
+Make sure to set up required environment variables in `.env.test`:
+```
+JWT_SECRET=your-test-secret
+NODE_ENV=test
+```
+
+
 ## Contributing
 
 1. Fork the repository
