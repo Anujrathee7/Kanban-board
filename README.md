@@ -31,6 +31,11 @@ cd kanban-board
 npm install
 npm run dev
 ```
+## 4. Both Together
+```bash
+npm run install
+npm run dev
+```
 
 ### 4. Access
 - Frontend: http://localhost:5174
