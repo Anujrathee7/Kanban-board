@@ -20,7 +20,7 @@ cd kanban-board
 ### 2. Backend Setup
 ```bash
 cd kanban-board-backend
-cp .env.example .env  # Update with your values
+cp .env.example .env  # Update with your values //You don't have to this as i have uploaded env file on github
 npm install
 npm start
 ```
