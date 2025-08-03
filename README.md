@@ -115,6 +115,6 @@ I have added the env file to github. *Note: Never commit .env files in productio
 | API service abstraction in frontend (apiService.ts) | 1 |
 | React Context Provider for global auth/token handling (authContext.tsx) | 1 |
 | Framer motion for animations | 1 |
-|Front-end and back-end glued together| | 1 |
+|Front-end and back-end glued together| 1 |
 | Unit testing for routes using Jest (10 Test case) | 6 |
 | **Total Points** | **60** |
