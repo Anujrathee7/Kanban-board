@@ -29,6 +29,9 @@ app.use('/api/auth', auth_1.default);
 app.use('/api/boards', board_1.default);
 app.use('/api/columns', column_1.default);
 app.use('/api/cards', card_1.default);
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+if (process.env.NODE_ENV !== 'test') {
+    app.listen(PORT, () => {
+        console.log(`Server running on port ${PORT}`);
+    });
+}
+exports.default = app;
