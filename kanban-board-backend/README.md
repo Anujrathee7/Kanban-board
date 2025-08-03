@@ -155,11 +155,6 @@ Tests use:
 - JWT for authentication
 - Supertest for HTTP assertions
 
-Make sure to set up required environment variables in `.env.test`:
-```
-JWT_SECRET=your-test-secret
-NODE_ENV=test
-```
 
 
 ## Contributing
