@@ -1,7 +1,7 @@
 # Kanban Board Application
 **By: Anuj Rathee (001715080)**
 
-*Note: AI systems like ChatGPT and Claude were used for improving documentation flow and formatting, debugging, and helping with writing test cases for jest and setting it up, and feature ideation. All code was written manually without AI-generated code.*
+*Note: AI systems like ChatGPT and Claude were used for improving documentation flow and formatting, working with tailwind css, and helping with writing test cases for routes using jest. All code was written by  me and No AI-generated code has been presented as my own work.*
 
 ## Tech Stack
 - **Frontend**: React with Tailwind CSS for responsive, utility-first styling
@@ -89,7 +89,11 @@ PORT=5000
 MONGODB_URL=mongodb://localhost:27017/kanban
 JWT_SECRET=your_secret_key
 NODE_ENV=development
+
+I have added the env file to github. *Note: Never commit .env files in production environments*
 ```
+
+** For detailed informatin refer to readme in the respective folder for front-end and back-end**
 
 ## Implemented Features
 
@@ -98,17 +102,14 @@ NODE_ENV=development
 | Basic features with well-written documentation | 25 |
 | Utilization of React for front-end | 3 |
 | Cards can be reordered with drag drop across columns and within same column | 4 |
-| User can double click to edit board title, and task card title and description | 4 |
+| User can double click to edit board title, and task card title and description | 3 |
 | User can sort task cards based on different sorting options | 4 |
 | User can filter card based on the keyword they have searched | 3 |
 | Test software for accessibility; keyboard/voice command and screen reader compatibility | 3 |
-| Cards have timestamp for creation and updates, displayed with proper formatting | 3 |
-| Express validator for request validation, centralized error handling, and JWT authentication | 4 |
-| API service abstraction in frontend (apiService.ts) | 2 |
-| React Context Provider for global auth/token handling (authContext.tsx) | 2 |
-| Card descriptions with editing capability | 1 |
+| Cards have visible timestamps for creation and updates	 | 3 |
+| Middlware for Express validator for request validation, centralized error handling, and JWT authentication | 2 |
+| API service abstraction in frontend (apiService.ts) | 1 |
+| React Context Provider for global auth/token handling (authContext.tsx) | 1 |
 | Framer motion for animations | 1 |
+| Unit testing for routes using Jest (10 Test case) | 6 |
 | **Total Points** | **59** |
-
-*Note: Never commit .env files in production environments*
-
