@@ -33,7 +33,7 @@ npm run dev
 ```
 
 ### 4. Access
-- Frontend: http://localhost:5173
+- Frontend: http://localhost:5174
 - Backend API: http://localhost:5000
 
 ## User Manual
