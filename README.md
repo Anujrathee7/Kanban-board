@@ -58,7 +58,6 @@ npm run dev
 2. **Enhanced User Experience**
 - Card sorting and filtering
 - Timestamps for card creation/updates
-- Card descriptions with markdown support
 - Framer Motion animations
 
 3. **Technical Implementation**
