@@ -46,7 +46,7 @@ npm run preview
 
 ## Environment Setup
 
-Make sure the backend API is running on http://localhost:5000
+Make sure the backend API is running on http://localhost:5174
 
 ## Project Structure
 
