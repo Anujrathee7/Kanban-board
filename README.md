@@ -14,7 +14,7 @@
 ### 1. Clone Repository
 ```bash
 git clone <repository-url>
-cd Project_Advanced_Web
+cd kanban-board
 ```
 
 ### 2. Backend Setup
