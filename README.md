@@ -93,7 +93,7 @@ NODE_ENV=development
 I have added the env file to github. *Note: Never commit .env files in production environments*
 ```
 
-** For detailed informatin refer to readme in the respective folder for front-end and back-end**
+** For detailed information refer to the readme for front-end and back-end respectively.*
 
 ## Implemented Features
 
