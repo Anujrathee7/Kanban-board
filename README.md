@@ -22,7 +22,7 @@ cd kanban-board
 ### 2. Backend Setup
 ```bash
 cd kanban-board-backend
-cp .env.example .env  # Update with your values //You don't have to this as i have uploaded env file on github
+cp .env.example .env  # Update with your values
 npm install
 npm start
 ```
@@ -95,9 +95,9 @@ PORT=5000
 MONGODB_URL=mongodb://localhost:27017/kanban
 JWT_SECRET=your_secret_key
 NODE_ENV=development
-
-I have added the env file to github. *Note: Never commit .env files in production environments*
 ```
+
+Copy `kanban-board-backend/.env.example` to `.env` and fill in your values. `.env` files are not committed. In production (Vercel), `MONGODB_URI` and `JWT_SECRET` are set as project environment variables.
 
 ** For detailed information refer to the readme for front-end and back-end respectively.*
 
