@@ -25,6 +25,9 @@ app.use(cors())
 app.use(express.urlencoded({extended: true}))
 
 //Routes
+app.get('/', (_req, res) => {
+  res.json({ message: 'Kanban Board API is running', frontend: 'https://anuj-kanban.vercel.app' })
+})
 app.use('/api/auth',authRouter)
 app.use('/api/boards',boardRouter)
 app.use('/api/columns',columnRouter)

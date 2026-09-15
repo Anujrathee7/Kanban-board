@@ -36,7 +36,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         if (savedToken) {
             // Verify token is still valid by fetching profile
             try {
-            const response = await api.getProfile(savedToken);
+            await api.getProfile(savedToken);
             setToken(savedToken);
             } catch (error) {
             // Token is invalid, clear storage
@@ -82,7 +82,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     const register = async(name: string, email: string, password: string):Promise<boolean>=>{
         try{
             setLoading(true)
-            const response = await api.register(name,email,password)
+            await api.register(name,email,password)
             return true
         }catch(error){
             console.error("Registration error",error);

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Column,Card } from "../model/Type";
 import { FaTrash,FaX,FaPlus  } from "react-icons/fa6";
 import api from "../api/apiService";
@@ -19,8 +19,8 @@ interface ColumnProps{
 }
 
 
-const UserColumn: React.FC<ColumnProps> = ({column,getBoard,draggedCard,setDraggedCard,sortOption,setSortOption,searchTerm,setSearchTerm})=>{
-    const {_id, title,position,cards} = column
+const UserColumn: React.FC<ColumnProps> = ({column,getBoard,draggedCard,setDraggedCard,sortOption,searchTerm})=>{
+    const {_id, title,cards} = column
     const {token} = useAuth()
     const [isAdding,setIsAdding] = useState<boolean>(false)
     const [cardTitle,setCardTitle] = useState<string>('')

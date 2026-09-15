@@ -1,7 +1,7 @@
 //Class with all the API available
 
 class ApiService{
-    private baseURL = 'http://localhost:5000/api';
+    private baseURL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
     private getAuthHeaders(token: string | null){
         return{

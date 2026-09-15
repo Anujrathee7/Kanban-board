@@ -2,7 +2,7 @@ import mongoose, { Connection } from "mongoose";
 
 export const connectDB =  async(): Promise<void>=>{
     try{
-        const mongoURL = process.env.MONGODB_URL;
+        const mongoURL = process.env.MONGODB_URI || process.env.MONGODB_URL;
         if(!mongoURL){
             throw new Error("MONGODB_URL enviornment variable is not defined.")
         }

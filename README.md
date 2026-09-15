@@ -1,6 +1,8 @@
 # Kanban Board Application
 **By: Anuj Rathee (001715080)**
 
+**Live demo: [anuj-kanban.vercel.app](https://anuj-kanban.vercel.app)** · API: [anuj-kanban-api.vercel.app](https://anuj-kanban-api.vercel.app)
+
 *Note: AI systems like ChatGPT and Claude were used for improving documentation flow and formatting, working with tailwind css, and helping with writing test cases for routes using jest. All code was written by  me and No AI-generated code has been presented as my own work.*
 
 ## Tech Stack
